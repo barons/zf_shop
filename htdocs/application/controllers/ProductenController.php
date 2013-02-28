@@ -13,6 +13,13 @@ class ProductenController extends Zend_Controller_Action
         // action body
     }
 
+    public function detailAction()
+    {
+        // action body
+    }
+
 
 }
+
+
 

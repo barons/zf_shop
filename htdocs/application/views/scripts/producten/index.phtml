@@ -1,4 +1,19 @@
-<br /><br />
-<div id="view-content">
-	<p>View script for controller <b>Producten</b> and script/action name <b>index</b></p>
-</div>
+<h2>Alle producten</h2>
+
+<?
+    $producten = array('product 1','product 2','product 3','product 4','product 5','product 6','product 7','product 8','product 9');
+?>
+
+<? $item_counter = 1; ?>
+<? foreach ($producten as $product) { ?>
+    <article<? if ($item_counter == 3) { echo ' class="no-margin"'; $item_counter = 0; } ?>>
+        <h3><?= $product ?></h3>
+        <img src="http://placehold.it/270x200" alt="product">
+        <br>
+        <span class="btns">
+            <a href="#">Toevoegen aan winkelmandje (+)</a>
+            <a href="#">Details (?)</a>
+        </span>
+    </article>
+    <? $item_counter++; ?>
+<? } ?>

@@ -2,9 +2,29 @@
 <html>
     <head>
         <title>Zend Framework Webshop</title>
-        <link href="css/screen.css" rel="stylesheet" type="text/css">
+        <link href="/css/screen.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <?php echo $this->layout()->content; ?>
+        
+        <div id="container">
+    
+            <header>
+                <h1>Zend Framework Webshop</h1>
+                <p id="buttons">
+                    <a href="#">Winkelmandje (0)</a> |
+                    <a href="#">Login</a> | 
+                    <a href="#">Registreer</a>
+                </p>
+            </header>
+            
+            <section id="body">
+                <?php echo $this->layout()->content; ?>
+            </section>
+            
+            <footer>
+                &copy; <?= date('Y'); ?> All rights reserved
+            </footer>
+        </div>
+        
     </body>
 </html>
