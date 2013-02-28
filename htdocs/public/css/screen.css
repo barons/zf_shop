@@ -36,6 +36,9 @@ h2 {
     font-size: 2em;
     padding-bottom: 30px;
 }
+h2.big {
+    font-size: 2.4em;
+}
 
 h3 {
     font-size: 1.6em;
@@ -77,6 +80,51 @@ article img {
     border-radius: 2px;
     box-shadow: 0 0 4px rgba(0,0,0,.25);
 }
+article.detail img {
+    float: left;
+}
+
+article.detail p {
+    float: right;
+    width: 490px;
+    font-size: 1.3em;
+    line-height: 1.4em;
+    margin-top: 10px;
+}
+
+article.detail {
+    width: 100%;
+}
+
+article.detail .prijs {
+    width: auto;
+    font-size: 3.2em;
+    clear: right;
+}
+
+article.detail .bestel a {
+    clear: right;
+    width: auto;
+    float: right;
+    color: #fff;
+    margin-top: 20px;
+}
+article.detail .bestel a:hover {
+    text-decoration: underline;
+}
+
+p.terug a {
+    color: #fff;
+    font-size: 1.2em;
+    display: block;
+    background: rgba(0,0,0,.2);
+    float: left;
+    padding: 10px;
+    border-radius: 2px;
+}
+p.terug:first-child a {
+    float: right;
+}
 
 .btns {
     display: block;
@@ -100,6 +148,6 @@ footer {
     float: left;
     width: 100%;
     font-size: 1.1em;
-    padding-top: 10px;
+    padding-top: 12px;
     margin-bottom: 20px;
 }
